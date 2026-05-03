@@ -206,3 +206,18 @@ L'inventaire est séparé en deux parties :
 ---
 
 > ℹ️ _Document préparé pour le cours INF15122 — Base de données 1 — UQAR — Session d'hiver 2026_
+
+---
+
+## Screenshots
+
+|                                                                                     |                                                                                     |                                                                                     |                                                                                     |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| ![Screenshot 1](screenshots/Screenshot%202026-05-03%20at%201.05.15%E2%80%AFAM.png)  | ![Screenshot 2](screenshots/Screenshot%202026-05-03%20at%201.05.24%E2%80%AFAM.png)  | ![Screenshot 3](screenshots/Screenshot%202026-05-03%20at%201.05.38%E2%80%AFAM.png)  | ![Screenshot 4](screenshots/Screenshot%202026-05-03%20at%201.05.48%E2%80%AFAM.png)  |
+| ![Screenshot 5](screenshots/Screenshot%202026-05-03%20at%201.06.02%E2%80%AFAM.png)  | ![Screenshot 6](screenshots/Screenshot%202026-05-03%20at%201.06.10%E2%80%AFAM.png)  | ![Screenshot 7](screenshots/Screenshot%202026-05-03%20at%201.06.16%E2%80%AFAM.png)  | ![Screenshot 8](screenshots/Screenshot%202026-05-03%20at%201.06.24%E2%80%AFAM.png)  |
+| ![Screenshot 9](screenshots/Screenshot%202026-05-03%20at%201.06.47%E2%80%AFAM.png)  | ![Screenshot 10](screenshots/Screenshot%202026-05-03%20at%201.07.00%E2%80%AFAM.png) | ![Screenshot 11](screenshots/Screenshot%202026-05-03%20at%201.07.07%E2%80%AFAM.png) | ![Screenshot 12](screenshots/Screenshot%202026-05-03%20at%201.07.14%E2%80%AFAM.png) |
+| ![Screenshot 13](screenshots/Screenshot%202026-05-03%20at%201.07.23%E2%80%AFAM.png) | ![Screenshot 14](screenshots/Screenshot%202026-05-03%20at%201.07.39%E2%80%AFAM.png) | ![Screenshot 15](screenshots/Screenshot%202026-05-03%20at%201.07.45%E2%80%AFAM.png) | ![Screenshot 16](screenshots/Screenshot%202026-05-03%20at%201.07.53%E2%80%AFAM.png) |
+| ![Screenshot 17](screenshots/Screenshot%202026-05-03%20at%201.08.04%E2%80%AFAM.png) | ![Screenshot 18](screenshots/Screenshot%202026-05-03%20at%201.08.15%E2%80%AFAM.png) | ![Screenshot 19](screenshots/Screenshot%202026-05-03%20at%201.08.26%E2%80%AFAM.png) | ![Screenshot 20](screenshots/Screenshot%202026-05-03%20at%201.08.35%E2%80%AFAM.png) |
+| ![Screenshot 21](screenshots/Screenshot%202026-05-03%20at%201.08.51%E2%80%AFAM.png) | ![Screenshot 22](screenshots/Screenshot%202026-05-03%20at%201.09.00%E2%80%AFAM.png) | ![Screenshot 23](screenshots/Screenshot%202026-05-03%20at%201.09.14%E2%80%AFAM.png) | ![Screenshot 24](screenshots/Screenshot%202026-05-03%20at%201.09.58%E2%80%AFAM.png) |
+| ![Screenshot 25](screenshots/Screenshot%202026-05-03%20at%201.10.05%E2%80%AFAM.png) | ![Screenshot 26](screenshots/Screenshot%202026-05-03%20at%201.10.24%E2%80%AFAM.png) | ![Screenshot 27](screenshots/Screenshot%202026-05-03%20at%201.10.55%E2%80%AFAM.png) | ![Screenshot 28](screenshots/Screenshot%202026-05-03%20at%201.11.11%E2%80%AFAM.png) |
+| ![Screenshot 29](screenshots/Screenshot%202026-05-03%20at%201.11.25%E2%80%AFAM.png) | ![Screenshot 30](screenshots/Screenshot%202026-05-03%20at%201.12.08%E2%80%AFAM.png) | ![Screenshot 31](screenshots/Screenshot%202026-05-03%20at%201.12.17%E2%80%AFAM.png) | ![Screenshot 32](screenshots/Screenshot%202026-05-03%20at%201.12.26%E2%80%AFAM.png) |
