@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails Recette | La fermerie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="../../index.html">
+            La fermerie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Brut</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown">
+                    <li>
+                      <a class="dropdown-item" href="../brut/produit.html">Liste Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../brut/commandes.html">Commandes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../fournisseurs/fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Transforme</a>
+
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./produits.html">Liste Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./commandes.html">Commandes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./recettes.html">Recettes</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../production/production.html">Production</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../rapports/index.html">Rapports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../clients/clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-4">Détails de la Recette</h2>
+        <a href="./recettes.html" class="btn btn-outline-secondary">
+          <i class="fa-solid fa-arrow-left"></i> Retour à la liste
+        </a>
+      </div>
+
+      <section class="py-3 py-md-5 py-xl-8">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h2 class="mb-4 display-5 text-center">Recette</h2>
+              <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row gy-4 gy-lg-0">
+            <div class="col-12 col-lg-4 col-xl-3">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="card widget-card border-light shadow-sm">
+                    <div class="card-header text-bg-primary">
+                      <h2 id="recette-format"></h2>
+                    </div>
+                    <div class="card-body">
+                      <div class="text-center mb-3">
+                        <div
+                          id="recette-avatar"
+                          class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-bold fs-4"
+                          style="width: 96px; height: 96px"
+                          aria-label="Avatar recette">
+                          <span id="recette-img">...</span>
+                        </div>
+                      </div>
+                      <h5 class="text-center mb-1" id="recette-produit"></h5>
+
+                      <ul class="list-group list-group-flush mb-4">
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Format:</h6>
+                          <span class="fw-bold" id="recette-nom-format"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Stock:</h6>
+                          <span class="fw-bold" id="recette-stock"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Unité:</h6>
+                          <span class="fw-bold" id="recette-unite"></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card widget-card border-light shadow-sm">
+                    <div class="card-header text-bg-success">Validation</div>
+                    <div class="card-body">
+                      <div class="mb-3">
+                        <label for="validate-qty" class="form-label">Quantité à produire</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="validate-qty"
+                          min="1"
+                          value="1"
+                        />
+                      </div>
+                      <div class="d-grid">
+                        <button
+                          class="btn btn-success"
+                          id="validateBtn"
+                          type="button">
+                          <i class="fas fa-check me-2"></i> Valider les matières
+                        </button>
+                      </div>
+                      <div id="validation-result" class="mt-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card widget-card border-light shadow-sm">
+                    <div class="card-header text-bg-danger">Danger</div>
+                    <div class="card-body">
+                      <div class="d-grid m-0">
+                        <button
+                          class="btn btn-outline-danger"
+                          id="deleteRecetteBtn"
+                          type="button">
+                          <i class="fa-solid fa-trash me-2"></i> Supprimer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-9">
+              <div class="card widget-card border-light shadow-sm">
+                <div class="card-body p-4">
+                  <ul class="nav nav-tabs" id="profileTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="ingredients-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#ingredients-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="ingredients-tab-pane"
+                        aria-selected="true">
+                        Ingrédients
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="prix-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#prix-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="prix-tab-pane"
+                        aria-selected="false">
+                        Prix
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="add-ingredient-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#add-ingredient-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="add-ingredient-tab-pane"
+                        aria-selected="false">
+                        Ajouter Matière
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content pt-4" id="profileTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="ingredients-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="ingredients-tab"
+                      tabindex="0">
+                      <h5 class="mb-3">Matières premières</h5>
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Produit Brut</th>
+                              <th>Unité</th>
+                              <th>Qté / Unité Transformée</th>
+                              <th>Qté Brute Requise</th>
+                              <th>Stock Dispo</th>
+                              <th>Status</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody id="ingredients-list">
+                            <tr>
+                              <td colspan="7" class="text-center">
+                                Chargement...
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="prix-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="prix-tab"
+                      tabindex="0">
+                      <h5 class="mb-3">Prix par type de client</h5>
+                      <div class="table-responsive">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Type Client</th>
+                              <th>Qté Min</th>
+                              <th>Prix</th>
+                            </tr>
+                          </thead>
+                          <tbody id="prix-list">
+                            <tr>
+                              <td colspan="3" class="text-center">
+                                Chargement...
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="add-ingredient-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="add-ingredient-tab"
+                      tabindex="0">
+                      <h5 class="mb-3">Ajouter une matière première</h5>
+                      <form id="addMatiereForm">
+                        <div class="row gy-3">
+                          <div class="col-12 col-md-4">
+                            <label class="form-label">Produit Brut
+                              <span class="text-danger">*</span></label>
+                            <select
+                              class="form-select"
+                              id="matiere-raw-product"
+                              required>
+                              <option value="" selected>
+                                Sélectionnez un produit
+                              </option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-md-3">
+                            <label class="form-label">Qté Produit Transformé
+                              <span class="text-danger">*</span></label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="matiere-qty-trans"
+                              min="1"
+                              required
+                            />
+                          </div>
+                          <div class="col-12 col-md-3">
+                            <label class="form-label">Qté Produit Brut
+                              <span class="text-danger">*</span></label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id="matiere-qty-brut"
+                              min="0.01"
+                              step="0.01"
+                              required
+                            />
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-success">
+                              <i class="fas fa-plus me-2"></i>Ajouter la matière
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top">
+      <div class="container">
+        <small>&copy; 2026 La fermerie du Père Canuel. Tous droits réservés.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/api-produit-brut.js"></script>
+    <script src="../../assets/js/api-recettes.js"></script>
+    <script>
+      function getRecetteIdFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("id");
+      }
+
+      function firstTwoLettersOfName(name) {
+        if (name && name.length >= 2) {
+          return name.substring(0, 2).toUpperCase();
+        }
+        return "??";
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        const recetteId = getRecetteIdFromURL();
+        if (!recetteId) {
+          alert("ID de la recette manquant dans l'URL.");
+          return;
+        }
+
+        try {
+          const recette = await fetchRecetteById(recetteId);
+          if (!recette) {
+            alert("Recette non trouvée.");
+            return;
+          }
+
+          // Afficher les détails
+          let twoletters = firstTwoLettersOfName(recette.produit_nom);
+          document.getElementById("recette-img").textContent = twoletters;
+          document.getElementById("recette-format").textContent =
+            recette.nom_format;
+          document.getElementById("recette-produit").textContent =
+            recette.produit_nom;
+          document.getElementById("recette-nom-format").textContent =
+            recette.nom_format;
+          document.getElementById("recette-stock").textContent =
+            recette.stock_quantity;
+          document.getElementById("recette-unite").textContent =
+            `${recette.unite_code} (${recette.unite_nom})`;
+
+          // Charger les produits bruts pour le formulaire d'ajout
+          try {
+            const produitsBruts = await fetchProduitsBrut();
+            const matiereSelect = document.getElementById(
+              "matiere-raw-product",
+            );
+            if (produitsBruts && produitsBruts.length > 0) {
+              produitsBruts.forEach((p) => {
+                const option = document.createElement("option");
+                option.value = p.id;
+                option.textContent = p.nom;
+                matiereSelect.appendChild(option);
+              });
+            }
+          } catch (error) {
+            console.error("Error loading produits bruts:", error);
+          }
+
+          // Afficher les ingrédients
+          const ingredientsTableBody =
+            document.getElementById("ingredients-list");
+          if (!recette.ingredients || recette.ingredients.length === 0) {
+            ingredientsTableBody.innerHTML =
+              '<tr><td colspan="7" class="text-center">Aucun ingrédient trouvé.</td></tr>';
+          } else {
+            ingredientsTableBody.innerHTML = recette.ingredients
+              .map(
+                (ing) => `
+                <tr>
+                  <td>${ing.produit_brut_nom}</td>
+                  <td>${ing.unite_code}</td>
+                  <td>${ing.quantite_produit_trans}</td>
+                  <td>${ing.quantite_produit_brut}</td>
+                  <td><span class="badge bg-${ing.stock_disponible >= ing.quantite_produit_brut ? "success" : "danger"}">${ing.stock_disponible}</span></td>
+                  <td><span class="badge bg-${ing.stock_suffisant ? "success" : "danger"}">${ing.stock_suffisant ? "OK" : "Insuffisant"}</span></td>
+                  <td>
+                    <button
+                        class="btn btn-sm btn-outline-warning me-1"
+                        onclick="updateMatiereRecette(${recetteId}, ${ing.raw_produit_id}, prompt('Nouvelle quantité brute:', ${ing.quantite_produit_brut}))">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button
+                        class="btn btn-sm btn-outline-danger"
+                        onclick="deleteMatiereRecette(${recetteId}, ${ing.raw_produit_id})">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              `,
+              )
+              .join("");
+          }
+
+          // Afficher les prix
+          const prixTableBody = document.getElementById("prix-list");
+          if (!recette.prix || recette.prix.length === 0) {
+            prixTableBody.innerHTML =
+              '<tr><td colspan="3" class="text-center">Aucun prix défini.</td></tr>';
+          } else {
+            prixTableBody.innerHTML = recette.prix
+              .map(
+                (p) => `
+                <tr>
+                  <td><span class="badge bg-info">${p.client_type}</span></td>
+                  <td>${p.quantite_min}</td>
+                  <td>${p.prix} $</td>
+                </tr>
+              `,
+              )
+              .join("");
+          }
+        } catch (error) {
+          console.error("Error fetching recette:", error);
+          alert(
+            "Une erreur est survenue lors de la récupération de la recette.",
+          );
+        }
+      });
+
+      // Valider la recette
+      document
+        .getElementById("validateBtn")
+        .addEventListener("click", async () => {
+          const recetteId = getRecetteIdFromURL();
+          const quantite = document.getElementById("validate-qty").value;
+
+          if (!quantite || quantite < 1) {
+            alert("Veuillez entrer une quantité valide.");
+            return;
+          }
+
+          try {
+            const result = await validateRecette(recetteId, parseInt(quantite));
+            const resultDiv = document.getElementById("validation-result");
+
+            if (result.valide) {
+              resultDiv.innerHTML = `
+              <div class="alert alert-success">
+                <strong>Validation réussie!</strong> Toutes les matières sont disponibles.
+                <br>
+                <small>Qté demandée: ${result.quantite_demandee}</small>
+              </div>
+            `;
+            } else {
+              let html = `
+              <div class="alert alert-warning">
+                <strong>Attention!</strong> Certaines matières sont insuffisantes.
+                <br>
+                <small>Qté demandée: ${result.quantite_demandee}, Manquants: ${result.nb_manquants}</small>
+              </div>
+              <div class="table-responsive mt-2">
+                <table class="table table-sm table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Produit</th>
+                      <th>Requis</th>
+                      <th>Dispo</th>
+                      <th>Manquant</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+            `;
+
+              result.resultats.forEach((r) => {
+                html += `
+                <tr>
+                  <td>${r.produit_brut_nom}</td>
+                  <td>${r.quantite_necessaire}</td>
+                  <td>${r.stock_disponible}</td>
+                  <td class="${r.suffisant ? "text-success" : "text-danger"}">${r.quantite_manquante > 0 ? r.quantite_manquante : "0"}</td>
+                </tr>
+              `;
+              });
+
+              html += `</tbody></table></div>`;
+              resultDiv.innerHTML = html;
+            }
+          } catch (error) {
+            console.error("Error validating recette:", error);
+            alert("Une erreur est survenue lors de la validation.");
+          }
+        });
+
+      // Ajouter une matière
+      document
+        .getElementById("addMatiereForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const recetteId = getRecetteIdFromURL();
+          const raw_produit_id = parseInt(
+            document.getElementById("matiere-raw-product").value,
+          );
+          const quantite_produit_trans = parseInt(
+            document.getElementById("matiere-qty-trans").value,
+          );
+          const quantite_produit_brut = parseFloat(
+            document.getElementById("matiere-qty-brut").value,
+          );
+
+          if (
+            !raw_produit_id ||
+            !quantite_produit_trans ||
+            !quantite_produit_brut
+          ) {
+            alert("Veuillez remplir tous les champs.");
+            return;
+          }
+
+          try {
+            await addMatiereToRecette(recetteId, {
+              raw_produit_id,
+              quantite_produit_trans,
+              quantite_produit_brut,
+            });
+            alert("Matière ajoutée avec succès!");
+            location.reload();
+          } catch (error) {
+            console.error("Error adding matiere:", error);
+            alert("Une erreur est survenue lors de l'ajout de la matière.");
+          }
+        });
+
+      // Modifier une matière
+      window.updateMatiereRecette = async (recetteId, matiereId, newQty) => {
+        if (!newQty || isNaN(parseFloat(newQty))) {
+          alert("Veuillez entrer une quantité valide.");
+          return;
+        }
+
+        try {
+          await updateMatiereRecette(recetteId, matiereId, {
+            quantite_produit_brut: parseFloat(newQty),
+          });
+          alert("Matière modifiée avec succès!");
+          location.reload();
+        } catch (error) {
+          console.error("Error updating matiere:", error);
+          alert("Une erreur est survenue lors de la modification.");
+        }
+      };
+
+      // Supprimer une matière
+      window.deleteMatiereRecette = async (recetteId, matiereId) => {
+        if (confirm("Êtes-vous sûr de vouloir supprimer cette matière ?")) {
+          try {
+            await deleteMatiereRecette(recetteId, matiereId);
+            alert("Matière supprimée avec succès!");
+            location.reload();
+          } catch (error) {
+            console.error("Error deleting matiere:", error);
+            alert("Une erreur est survenue lors de la suppression.");
+          }
+        }
+      };
+
+      // Supprimer la recette
+      document
+        .getElementById("deleteRecetteBtn")
+        .addEventListener("click", async () => {
+          const recetteId = getRecetteIdFromURL();
+          if (confirm("Êtes-vous sûr de vouloir supprimer cette recette ?")) {
+            try {
+              await deleteRecette(recetteId);
+              alert("Recette supprimée avec succès!");
+              window.location.href = "./recettes.html";
+            } catch (error) {
+              console.error("Error deleting recette:", error);
+              alert(
+                "Une erreur est survenue lors de la suppression de la recette.",
+              );
+            }
+          }
+        });
+    </script>
+  </body>
+</html>

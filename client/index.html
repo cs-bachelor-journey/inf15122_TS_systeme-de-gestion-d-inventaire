@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de bord | La fermenterie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret"
+      >
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="index.html">
+            La fermenterie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#!" aria-current="page"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Produit Brut</a
+                  >
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item active"
+                        href="./pages/brut/produit.html"
+                        >List Produit</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/brut/commandes.html"
+                        >Commandes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="./pages/fournisseurs/fournisseurs.html"
+                    >Fournisseurs</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Produit Transforme</a
+                  >
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/transforme/produits.html"
+                        >List Produit</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/transforme/commandes.html"
+                        >Commandes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/transforme/recettes.html"
+                        >Recettes</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="./pages/production/production.html"
+                        >Production</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/rapports/index.html"
+                    >Rapports</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/clients/clients.html"
+                    >Clients</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mb-4">
+      <h1>La fermenterie du Père Canuel</h1>
+      <h2>Tableau de bord</h2>
+      <p>
+        Bienvenue sur le tableau de bord de la fermenterie du Père Canuel.
+        Utilisez le menu pour naviguer entre les différentes sections de gestion
+        des produits, commandes, fournisseurs, rapports et clients.
+      </p>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top"
+    >
+      <div class="container">
+        <small
+          >&copy; 2026 La fermenterie du Père Canuel. Tous droits
+          réservés.</small
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

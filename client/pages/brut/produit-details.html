@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produits brut | La fermenterie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="../../index.html">
+            La fermenterie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Brut</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item active"
+                        href="#!"
+                        aria-current="page">List Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./commandes.html">Commandes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../fournisseurs/fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Transforme</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/produits.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/commandes.html">Commandes</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/recettes.html">Recettes</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../production/production.html">Production</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../rapports/index.html">Rapports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../clients/clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">Détails du produit brut</h1>
+        <a href="./produit.html" class="btn btn-outline-secondary">
+          <i class="fa-solid fa-arrow-left"></i> Retour à la liste
+        </a>
+      </div>
+
+      <!--  Info produit brut -->
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title text-primary" id="productName">
+                Nom du produit
+              </h2>
+              <table class="table table-borderless mb-0">
+                <tbody>
+                  <tr>
+                    <th scope="row">Quantité en stock</th>
+                    <td id="productQuantity">-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Unité</th>
+                    <td id="productUnite">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table fournisseur -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-light">
+              <strong>Fournisseurs</strong>
+              <span class="badge bg-primary ms-2" id="fournisseursTotal">0</span>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Nom</th>
+                      <th>Contact</th>
+                      <th>Téléphone</th>
+                    </tr>
+                  </thead>
+                  <tbody id="fournisseursTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Table Prix -->
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-light">
+              <strong>Prix par fournisseur</strong>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                  <thead>
+                    <tr>
+                      <th>Fournisseur</th>
+                      <th>Quantité min</th>
+                      <th>Prix unitaire</th>
+                    </tr>
+                  </thead>
+                  <tbody id="prixFournisseursTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top">
+      <div class="container">
+        <small>&copy; 2026 La fermenterie du Père Canuel. Tous droits
+          réservés.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/api-produit-brut.js"></script>
+    <script>
+      const fournisseursTableBody = document.getElementById(
+        "fournisseursTableBody",
+      );
+      const prixFournisseursTableBody = document.getElementById(
+        "prixFournisseursTableBody",
+      );
+
+      fournisseursTableBody.innerHTML = `<div class="spinner-border m-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>`;
+      prixFournisseursTableBody.innerHTML = `<div class="spinner-border m-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>`;
+
+      function afficherLesInfosDuProduit(data) {
+        if (!data || data.length === 0) {
+          alert("Aucune information disponible pour ce produit.");
+          return;
+        }
+
+        // Afficher les détails du produit
+        document.getElementById("productName").textContent = data[0].nom;
+        document.getElementById("productQuantity").textContent =
+          data[0].stock_quantity;
+        document.getElementById("productUnite").textContent = data[0].unite;
+
+        document.getElementById("fournisseursTotal").textContent =
+          data.fournisseursTotal;
+
+        // Afficher les fournisseurs
+        fournisseursTableBody.innerHTML =
+          data.fournisseurs.length < 1
+            ? `<tr><td colspan="3" class="text-center">Aucun fournisseurs pour ce produit brut</td></tr>`
+            : data.fournisseurs
+                .map(
+                  (fournisseur) => `
+                  <tr>
+                    <td>${fournisseur.name}</td>
+                    <td>${fournisseur.person_to_contact}</td>
+                    <td>${fournisseur.tel}</td>
+                  </tr>
+                `,
+                )
+                .join("");
+
+        // Afficher les prix par fournisseur
+        prixFournisseursTableBody.innerHTML =
+          data.prixFournisseurs < 1
+            ? `<tr><td colspan="3" class="text-center">Aucun prix par fournisseur pour ce produit brut</td></tr>`
+            : data.prixFournisseurs
+                .map(
+                  (prix) => `
+                  <tr>
+                    <td>${prix.fournisseur}</td>
+                    <td>${prix.quantite_min}</td>
+                    <td>${prix.prix_unitaire}</td>
+                  </tr>
+                `,
+                )
+                .join("");
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        const produitId = getProductIdFromURL();
+        if (produitId) {
+          const produitDetails = await fetchProductDetails(produitId);
+          afficherLesInfosDuProduit(produitDetails);
+        } else {
+          alert("ID du produit manquant dans l'URL.");
+        }
+      });
+    </script>
+  </body>
+</html>

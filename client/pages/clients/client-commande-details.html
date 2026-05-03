@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails de la Commande | La fermenterie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="../../index.html">
+            La fermenterie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Brut</a>
+
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown">
+                    <li>
+                      <a class="dropdown-item" href="../brut/produit.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../brut/commandes.html">Commandes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../fournisseurs/fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Transforme</a>
+
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/produits.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/commandes.html">Commandes</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/recettes.html">Recettes</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../production/production.html">Production</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../rapports/index.html">Rapports</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-4">Détails de la Commande</h2>
+        <a href="./client-details.html" class="btn btn-secondary">
+          <i class="fa-solid fa-arrow-left"></i> Retour aux détails du client
+        </a>
+      </div>
+
+      <section class="py-3 py-md-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <div class="card widget-card border-light shadow-sm">
+                <div class="card-header" id="commande-header">
+                  <h4 id="commande-title">Chargement...</h4>
+                </div>
+                <div class="card-body p-4">
+                  <div class="mb-4">
+                    <h5>Informations de la commande</h5>
+                    <ul class="list-group list-group-flush">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Numéro de commande:</span>
+                        <strong id="commande-id">...</strong>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Client:</span>
+                        <strong id="commande-client">...</strong>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Date de création:</span>
+                        <strong id="commande-date">...</strong>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Date de livraison:</span>
+                        <strong id="commande-livraison">...</strong>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Status:</span>
+                        <strong><span id="commande-status" class="badge rounded-pill">...</span></strong>
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Montant total:</span>
+                        <strong id="commande-montant">...</strong>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 class="mb-3">Articles commandés</h5>
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Format</th>
+                            <th>Produit</th>
+                            <th>Quantité</th>
+                            <th>Prix Unitaire</th>
+                            <th>Sous-total</th>
+                          </tr>
+                        </thead>
+                        <tbody id="commande-items">
+                          <tr>
+                            <td colspan="5" class="text-center">
+                              Chargement...
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top">
+      <div class="container">
+        <small>&copy; 2026 La fermenterie du Père Canuel. Tous droits
+          réservés.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/api-clients.js"></script>
+    <script>
+      function getCommandeParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          clientId: params.get("clientId"),
+          commandeId: params.get("commandeId"),
+        };
+      }
+
+      function getStatusBadgeColor(status) {
+        switch (status) {
+          case "commander":
+            return "warning";
+          case "expedier":
+            return "info";
+          case "recu":
+            return "success";
+          case "rupture de stock":
+            return "danger";
+          default:
+            return "secondary";
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", async () => {
+        const { clientId, commandeId } = getCommandeParams();
+
+        if (!clientId || !commandeId) {
+          alert("Paramètres manquants dans l'URL.");
+          return;
+        }
+
+        try {
+          const commande = await fetchClientCommandeDetails(
+            clientId,
+            commandeId,
+          );
+
+          if (!commande) {
+            alert("Commande non trouvée.");
+            return;
+          }
+
+          // Remplir les informations
+          document.getElementById("commande-title").textContent =
+            `Commande #${commande.commande_id}`;
+          document.getElementById("commande-id").textContent =
+            `CMD-${commande.commande_id}`;
+          document.getElementById("commande-client").textContent =
+            commande.client_name;
+          document.getElementById("commande-date").textContent = new Date(
+            commande.created_at,
+          ).toLocaleDateString();
+          document.getElementById("commande-livraison").textContent =
+            commande.delivered_at
+              ? new Date(commande.delivered_at).toLocaleDateString()
+              : "Non livré";
+          document.getElementById("commande-montant").textContent =
+            `${commande.montant_total} $`;
+
+          const statusBadge = document.getElementById("commande-status");
+          statusBadge.textContent = commande.status;
+          statusBadge.className = `badge rounded-pill bg-${getStatusBadgeColor(commande.status)}`;
+
+          // Afficher les articles
+          const itemsTableBody = document.getElementById("commande-items");
+          if (!commande.items || commande.items.length === 0) {
+            itemsTableBody.innerHTML =
+              '<tr><td colspan="5" class="text-center">Aucun article dans cette commande.</td></tr>';
+          } else {
+            itemsTableBody.innerHTML = commande.items
+              .map(
+                (item) => `
+                <tr>
+                  <td>${item.nom_format}</td>
+                  <td>${item.produit_nom}</td>
+                  <td>${item.quantite}</td>
+                  <td>${item.prix_unitaire} $</td>
+                  <td>${item.sous_total} $</td>
+                </tr>
+              `,
+              )
+              .join("");
+          }
+        } catch (error) {
+          console.error(
+            "Erreur lors de la récupération de la commande:",
+            error,
+          );
+          alert(
+            "Une erreur est survenue lors de la récupération de la commande.",
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

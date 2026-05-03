@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails du Client | La fermenterie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="../../index.html">
+            La fermenterie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Brut</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown">
+                    <li>
+                      <a class="dropdown-item" href="../brut/produit.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../brut/commandes.html">Commandes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../fournisseurs/fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Transforme</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/produits.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/commandes.html">Commandes</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/recettes.html">Recettes</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../production/production.html">Production</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../rapports/index.html">Rapports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-4">Détails du client</h2>
+        <a href="./clients.html" class="btn btn-outline-secondary">
+          <i class="fa-solid fa-arrow-left"></i> Retour à la liste
+        </a>
+      </div>
+
+      <!-- Profile 1 - Bootstrap Brain Component -->
+      <section class="py-3 py-md-5 py-xl-8">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+              <h2 class="mb-4 display-5 text-center">Client</h2>
+
+              <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row gy-4 gy-lg-0">
+            <div class="col-12 col-lg-4 col-xl-3">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="card widget-card border-light shadow-sm">
+                    <div class="card-header text-bg-primary">
+                      <h2 id="client-name1"></h2>
+                    </div>
+                    <div class="card-body">
+                      <div class="text-center mb-3">
+                        <div
+                          id="client-avatar"
+                          class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary text-white fw-bold fs-4"
+                          style="width: 96px; height: 96px"
+                          aria-label="Avatar client">
+                          <span id="client-img">...</span>
+                        </div>
+                      </div>
+                      <h5 class="text-center mb-1" id="client-name2"></h5>
+
+                      <ul class="list-group list-group-flush mb-4">
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Tel:</h6>
+                          <span class="fw-bold" id="client-tel"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Email:</h6>
+                          <span class="fw-bold" id="client-email"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Contact:</h6>
+                          <span class="fw-bold" id="client-contact"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Type:</h6>
+                          <span class="fw-bold" id="client-type"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Site:</h6>
+                          <span class="fw-bold" id="client-site"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Adresse:</h6>
+                          <span class="fw-bold" id="client-adress"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Ville:</h6>
+                          <span class="fw-bold" id="client-ville"></span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center">
+                          <h6 class="m-0">Région:</h6>
+                          <span class="fw-bold" id="client-region"></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card widget-card border-light shadow-sm">
+                    <div class="card-header text-bg-danger">Danger</div>
+                    <div class="card-body">
+                      <div class="d-grid m-0">
+                        <button
+                          class="btn btn-outline-danger"
+                          id="deleteClientBtn"
+                          type="button">
+                          <i class="fa-solid fa-trash me-2"></i> Supprimer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-8 col-xl-9">
+              <div class="card widget-card border-light shadow-sm">
+                <div class="card-body p-4">
+                  <ul class="nav nav-tabs" id="profileTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="overview-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#overview-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="overview-tab-pane"
+                        aria-selected="true">
+                        Commandes
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="edit-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#edit-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="edit-tab-pane"
+                        aria-selected="false">
+                        Modifier les informations
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content pt-4" id="profileTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="overview-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="overview-tab"
+                      tabindex="0">
+                      <h5 class="mb-3">Historique des commandes</h5>
+                      <div class="table-responsive">
+                        <table
+                          class="table table-bordered bsb-table-xl text-nowrap align-middle m-0"
+                          style="min-width: 900px">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Date</th>
+                              <th>Status</th>
+                              <th>Articles</th>
+                              <th>Quantité</th>
+                              <th>Montant</th>
+                            </tr>
+                          </thead>
+                          <tbody id="commandes-list">
+                            <tr id="no-commandes-message" style="display: none">
+                              <td colspan="6" class="text-center py-4">
+                                Ce client n'a aucune commande.
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div
+                      class="tab-pane fade"
+                      id="edit-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="edit-tab"
+                      tabindex="0">
+                      <h3 class="mb-4">
+                        Modifier les informations du client
+                      </h3>
+                      <div class="border overflow-hidden">
+                        <form id="editClientForm">
+                          <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                            <div class="col-12">
+                              <label for="edit-fullname" class="form-label">Nom <span class="text-danger">*</span></label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="edit-fullname"
+                                name="fullname"
+                                value=""
+                                required
+                              />
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-email" class="form-label">Email <span class="text-danger">*</span></label>
+                              <div class="input-group">
+                                <span class="input-group-text">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-envelope"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                                    />
+                                  </svg>
+                                </span>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="edit-email"
+                                  name="email"
+                                  value=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-tel" class="form-label">Tel <span class="text-danger">*</span></label>
+                              <div class="input-group">
+                                <span class="input-group-text">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-telephone"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                                    />
+                                  </svg>
+                                </span>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="edit-tel"
+                                  name="tel"
+                                  value=""
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-contact" class="form-label">Personne à contacter
+                                <span class="text-danger">*</span></label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="edit-contact"
+                                name="contact"
+                                value=""
+                                required
+                              />
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-type" class="form-label">Type de client <span class="text-danger">*</span></label>
+                              <select
+                                class="form-select"
+                                id="edit-type"
+                                name="client_type"
+                                required>
+                                <option value="" selected>Sélectionnez un type</option>
+                                <option value="particulier">Particulier</option>
+                                <option value="epicerie">Épicerie</option>
+                                <option value="restaurant">Restaurant</option>
+                              </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-site" class="form-label">Site Web </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="edit-site"
+                                name="site"
+                                value=""
+                              />
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-adress" class="form-label">Adresse </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="edit-adress"
+                                name="adress"
+                                value=""
+                              />
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-ville" class="form-label">Ville </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="edit-ville"
+                                name="ville"
+                                value=""
+                              />
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <label for="edit-region" class="form-label">Région </label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="edit-region"
+                                name="region"
+                                value=""
+                              />
+                            </div>
+
+                            <div class="col-12">
+                              <div class="d-grid">
+                                <button
+                                  class="btn btn-primary btn-lg"
+                                  type="submit">
+                                  <i class="fa-solid fa-floppy-disk me-2"></i>
+                                  Enregistrer les modifications
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top">
+      <div class="container">
+        <small>&copy; 2026 La fermenterie du Père Canuel. Tous droits
+          réservés.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/api-clients.js"></script>
+    <script>
+      // Fonction pour extraire l'ID du client depuis l'URL
+      function getClientIdFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("id");
+      }
+
+      // Fonction pour extraire les deux premières lettres du nom du client
+      function firstTwoLettersOfName(name) {
+        if (name && name.length >= 2) {
+          return name.substring(0, 2).toUpperCase();
+        }
+        return "??";
+      }
+
+      // Charger les détails du client au chargement de la page
+      document.addEventListener("DOMContentLoaded", async () => {
+        const clientId = getClientIdFromURL();
+        if (!clientId) {
+          alert("ID du client manquant dans l'URL.");
+          return;
+        }
+        try {
+          const client = await fetchClientById(clientId);
+          if (!client) {
+            alert("Client non trouvé.");
+            return;
+          }
+          // Afficher les détails du client
+          let twoletters = firstTwoLettersOfName(client.name);
+          document.getElementById("client-img").textContent = twoletters;
+          document.getElementById("client-name1").textContent = client.name;
+          document.getElementById("client-name2").textContent = client.name;
+          document.getElementById("client-tel").textContent = client.tel;
+          document.getElementById("client-email").textContent = client.email;
+          document.getElementById("client-contact").textContent = client.person_to_contact;
+          document.getElementById("client-type").textContent = client.client_type;
+          document.getElementById("client-site").textContent = client.web_site ? client.web_site : "N/A";
+          document.getElementById("client-adress").textContent = client.adress ? client.adress : "N/A";
+          document.getElementById("client-ville").textContent = client.ville ? client.ville : "N/A";
+          document.getElementById("client-region").textContent = client.region ? client.region : "N/A";
+
+          // Remplir le formulaire de modification
+          document.getElementById("edit-fullname").value = client.name;
+          document.getElementById("edit-email").value = client.email;
+          document.getElementById("edit-tel").value = client.tel;
+          document.getElementById("edit-contact").value = client.person_to_contact;
+          document.getElementById("edit-type").value = client.client_type;
+          document.getElementById("edit-site").value = client.web_site ? client.web_site : "";
+          document.getElementById("edit-adress").value = client.adress ? client.adress : "";
+          document.getElementById("edit-ville").value = client.ville ? client.ville : "";
+          document.getElementById("edit-region").value = client.region ? client.region : "";
+
+          // Charger l'historique des commandes
+          const commandesTableBody = document.getElementById("commandes-list");
+          const noCommandesMessage = document.getElementById("no-commandes-message");
+
+          if (!client.commandes || client.commandes.length === 0) {
+            noCommandesMessage.style.display = "table-row";
+          } else {
+            noCommandesMessage.style.display = "none";
+            commandesTableBody.innerHTML = client.commandes
+              .map(
+                (commande) => `
+                  <tr>
+                    <td><a href="./client-commande-details.html?clientId=${clientId}&commandeId=${commande.commande_id}">CMD-${commande.commande_id}</a></td>
+                    <td><h6>${new Date(commande.created_at).toLocaleDateString()}</h6></td>
+                    <td><span class="badge rounded-pill bg-${getStatusBadgeColor(commande.status)}">${commande.status}</span></td>
+                    <td><h6>${commande.nb_items}</h6></td>
+                    <td><h6>${commande.quantite_totale}</h6></td>
+                    <td><h6>${commande.montant_total} $</h6></td>
+                  </tr>
+                `,
+              )
+              .join("");
+          }
+        } catch (error) {
+          console.error("Erreur lors de la récupération du client :", error);
+          alert("Une erreur est survenue lors de la récupération du client.");
+        }
+      });
+
+      // Fonction pour obtenir la couleur du badge selon le statut
+      function getStatusBadgeColor(status) {
+        switch (status) {
+          case "commander": return "warning";
+          case "expedier": return "info";
+          case "recu": return "success";
+          case "rupture de stock": return "danger";
+          default: return "secondary";
+        }
+      }
+
+      // Gérer la soumission du formulaire de modification
+      const editForm = document.getElementById("editClientForm");
+      editForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const clientId = getClientIdFromURL();
+
+        try {
+          const updatedData = {
+            name: document.getElementById("edit-fullname").value,
+            email: document.getElementById("edit-email").value,
+            tel: document.getElementById("edit-tel").value,
+            person_to_contact: document.getElementById("edit-contact").value,
+            client_type: document.getElementById("edit-type").value,
+            web_site: document.getElementById("edit-site").value,
+            adress: document.getElementById("edit-adress").value,
+            ville: document.getElementById("edit-ville").value,
+            region: document.getElementById("edit-region").value,
+          };
+          await updateClient(clientId, updatedData);
+          alert("Client mis à jour avec succès !");
+
+          // Recharger la page pour afficher les nouvelles données
+          location.reload();
+        } catch (error) {
+          console.log("Erreur lors de la mise à jour du client :", error);
+          alert("Une erreur est survenue lors de la mise à jour du client.");
+        }
+      });
+
+      // Supprimer le client
+      const deleteBtn = document.getElementById("deleteClientBtn");
+      deleteBtn.addEventListener("click", async () => {
+        const clientId = getClientIdFromURL();
+        if (confirm("Êtes-vous sûr de vouloir supprimer ce client ?")) {
+          try {
+            await deleteClient(clientId);
+            alert("Client supprimé avec succès !");
+            // Rediriger vers la liste des clients après suppression
+            window.location.href = "./clients.html";
+          } catch (error) {
+            console.error("Erreur lors de la suppression du client :", error);
+            alert("Une erreur est survenue lors de la suppression du client.");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails du plan | La fermenterie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="../../index.html">
+            La fermenterie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Brut</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown">
+                    <li>
+                      <a class="dropdown-item" href="../brut/produit.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../brut/commandes.html">Commandes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../fournisseurs/fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Transforme</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/produits.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/commandes.html">Commandes</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/recettes.html">Recettes</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item active"
+                        aria-current="page"
+                        href="#!">Production</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../rapports/index.html">Rapports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../clients/clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-4">Détails du plan</h2>
+        <a href="./production.html" class="btn btn-outline-secondary">
+          <i class="fa-solid fa-arrow-left"></i> Retour aux plans
+        </a>
+      </div>
+
+      <section class="py-3 py-md-5">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-lg-10">
+              <div class="card widget-card border-light shadow-sm">
+                <div class="card-header text-bg-primary">
+                  <h5 id="plan-title">Plan #</h5>
+                </div>
+                <div class="card-body">
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <p>
+                        <strong>Recette:</strong>
+                        <span id="recette-name"></span>
+                      </p>
+                      <p>
+                        <strong>Status:</strong>
+                        <span id="plan-status"></span>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <strong>Date planifiée:</strong>
+                        <span id="plan-date"></span>
+                      </p>
+                      <p>
+                        <strong>Quantité:</strong>
+                        <span id="plan-quantite"></span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <h5 class="mb-3">Ingrédients requis</h5>
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Ingrédient</th>
+                          <th>Quantité requise</th>
+                          <th>Unité</th>
+                        </tr>
+                      </thead>
+                      <tbody id="ingredients-list"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top">
+      <div class="container">
+        <small>&copy; 2026 La fermenterie du Père Canuel. Tous droits
+          réservés.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"></script>
+  <script src="../../assets/js/config.js"></script>
+  <script src="../../assets/js/api-plans-production.js"></script>
+  <script>
+    function getPlanIdFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get("id");
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      const planId = getPlanIdFromURL();
+      if (!planId) {
+        alert("ID du plan manquant dans l'URL");
+        return;
+      }
+
+      try {
+        const plan = await fetchPlanProductionById(planId);
+        if (!plan) {
+          alert("Plan non trouvé");
+          return;
+        }
+
+        document.getElementById("plan-title").textContent =
+          "Plan #" + plan.id;
+        document.getElementById("recette-name").textContent =
+          plan.produit_nom + " (" + plan.nom_format + ")";
+        document.getElementById("plan-status").innerHTML =
+          '<span class="badge rounded-pill bg-info">Planifié</span>';
+        document.getElementById("plan-date").textContent = new Date(
+          plan.date_plan,
+        ).toLocaleDateString();
+        document.getElementById("plan-quantite").textContent = plan.quantite_plan;
+
+        const ingredients = await fetchMatieresNecessairesPlan(planId);
+        const ingredientsList = document.getElementById("ingredients-list");
+        if (ingredients && ingredients.length > 0) {
+          ingredientsList.innerHTML = ingredients
+            .map((ingredient) => {
+              return `
+                <tr>
+                  <td>${ingredient.produit_brut_nom}</td>
+                  <td>${ingredient.quantite_necessaire}</td>
+                  <td>${ingredient.unite}</td>
+                </tr>
+              `;
+            })
+            .join("");
+        } else {
+          ingredientsList.innerHTML = '<tr><td colspan="3" class="text-center">Aucun ingrédient trouvé</td></tr>';
+        }
+      } catch (error) {
+        console.error("Erreur:", error);
+        alert("Erreur lors du chargement des détails");
+      }
+    });
+  </script>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Produits brut | La fermenterie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="../../index.html">
+            La fermenterie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Brut</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./produit.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./commandes.html">Commandes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../fournisseurs/fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Transforme</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/produits.html">List Produit</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/commandes.html">Commandes</a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../transforme/recettes.html">Recettes</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../production/production.html">Production</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../rapports/index.html">Rapports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../clients/clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-4">Modifier les Infos du produit Brut</h2>
+        <a href="./produit.html" class="btn btn-secondary"><i class="fas fa-arrow-left me-2"></i>Retour</a>
+      </div>
+      <section class="container" class="py-3 py-md-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <form class="container-fluid" id="editProductForm">
+              <div class="row mb-3">
+                <label for="nom" class="col-sm-2 col-form-label">Nom: </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="nom" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="qty" class="col-sm-2 col-form-label">Quantite:
+                </label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="qty" disabled />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="unit" class="col-sm-5 col-form-label">Unite de Measure:
+                </label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="unit" disabled />
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-50 mt-3">
+                <i class="fas fa-save me-2"></i>Enregistrer
+              </button>
+              <div id="alertPlaceholder" class="mt-3">
+                <p>Note: Ici seulement la modification du Nom</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top">
+      <div class="container">
+        <small>&copy; 2026 La fermenterie du Père Canuel. Tous droits
+          réservés.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/api-produit-brut.js"></script>
+    <script>
+      // Fonction pour afficher les informations du produit dans le formulaire
+      function afficherLesInfosDuProduit(data) {
+        if (!data || data.length === 0) {
+          alert("Aucune information disponible pour ce produit.");
+          return;
+        }
+
+        const produit = data[0];
+        // remplir les champs du formulaire avec les données du produit
+        document.getElementById("nom").value = produit.nom;
+        document.getElementById("qty").value = produit.stock_quantity;
+        document.getElementById("unit").value = produit.unite;
+      }
+
+      // Charger les détails du produit dès que la page est prête
+      document.addEventListener("DOMContentLoaded", async () => {
+        const produitId = getProductIdFromURL();
+        if (produitId) {
+          const produitDetails = await fetchProductDetails(produitId);
+          afficherLesInfosDuProduit(produitDetails);
+        } else {
+          alert("ID du produit manquant dans l'URL.");
+        }
+      });
+
+      // Gérer la soumission du formulaire de modification
+
+      const editForm = document.getElementById("editProductForm");
+      editForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const produitId = getProductIdFromURL();
+        const nom = document.getElementById("nom").value.trim();
+
+        if (!nom) {
+          alert("Le nom du produit ne peut pas être vide.");
+          return;
+        }
+
+        try {
+          await updateProduitBrut(produitId, { nom });
+          alert("Produit modifié avec succès !");
+          // Rediriger vers la liste des produits après la modification
+          window.location.href = "./produit.html";
+        } catch (error) {
+          console.error(
+            "Erreur lors de la modification du produit brut: ",
+            error,
+          );
+          alert(
+            "Erreur lors de la modification du produit. Veuillez réessayer.",
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

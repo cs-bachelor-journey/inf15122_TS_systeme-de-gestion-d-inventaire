@@ -1,0 +1,50 @@
+services:
+  perecanuel_db:
+    image: mysql:latest
+    ports:
+      - 3309:3306
+    secrets:
+      - db_root_password
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/db_root_password
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - ./utfconf.cnf:/etc/mysql/conf.d/custom.cnf
+    networks:
+      - mysql_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npx nodemon src/server.js
+    ports:
+      - 8001:8001
+    networks:
+      - mysql_network
+    volumes:
+      - ./src:/app/src
+    env_file: .env
+    secrets:
+      - db_database_password
+    depends_on:
+      perecanuel_db:
+        condition: service_healthy
+
+networks:
+  mysql_network:
+
+secrets:
+  db_root_password:
+    file: ./root_password.txt
+  db_database_password:
+    file: ./database_password.txt
+
+volumes:
+  db_data:

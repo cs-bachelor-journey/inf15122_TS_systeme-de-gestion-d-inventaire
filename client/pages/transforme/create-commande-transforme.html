@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Créer Commande | La fermerie du Père Canuel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="bg-success text-white p-3 mb-4">
+      <nav
+        class="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+        <div class="container">
+          <a class="navbar-brand text-warning h2" href="../../index.html">
+            La fermerie du Père Canuel
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="accountDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Brut</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown">
+                    <li>
+                      <a class="dropdown-item" href="../brut/produit.html">Liste Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../brut/commandes.html">Commandes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../fournisseurs/fournisseurs.html">Fournisseurs</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#!"
+                    id="servicesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">Produit Transforme</a>
+                  <ul
+                    class="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./produits.html">Liste Produit</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./commandes.html">Commandes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./recettes.html">Recettes</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../production/production.html">Production</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../rapports/index.html">Rapports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../clients/clients.html">Clients</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-4">Créer une Commande</h2>
+        <a href="./commandes.html" class="btn btn-secondary">
+          <i class="fas fa-arrow-left me-2"></i>Retour
+        </a>
+      </div>
+
+      <section class="py-3 py-md-5">
+        <div class="border overflow-hidden">
+          <form id="createCommandeForm">
+            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+              <div class="col-12 col-md-6">
+                <label for="client-select" class="form-label">Client <span class="text-danger">*</span></label>
+                <select class="form-select" id="client-select" required>
+                  <option value="" selected>Sélectionnez un client</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="status-select" class="form-label">Statut <span class="text-danger">*</span></label>
+                <select class="form-select" id="status-select" required>
+                  <option value="" selected>Sélectionnez un statut</option>
+                  <option value="commander">Commander</option>
+                  <option value="expedier">Expedier</option>
+                  <option value="recu">Recu</option>
+                  <option value="rupture de stock">Rupture de stock</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <hr />
+                <h5>Ajouter des lignes de commande</h5>
+                <div id="lignes-container">
+                  <div class="ligne-row row gy-3 mb-3" id="ligne-1">
+                    <div class="col-12 col-md-4">
+                      <label class="form-label">Format ID <span class="text-danger">*</span></label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="format_id"
+                        placeholder="ID du format"
+                        required
+                        min="1"
+                      />
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <label class="form-label">Quantité <span class="text-danger">*</span></label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="quantite"
+                        placeholder="Quantité"
+                        required
+                        min="1"
+                      />
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <label class="form-label">Prix Unitaire <span class="text-danger">*</span></label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="prix_unitaire"
+                        placeholder="Prix"
+                        required
+                        min="0"
+                        step="0.01"
+                      />
+                    </div>
+                    <div class="col-12 col-md-2 d-flex align-items-end">
+                      <button
+                        type="button"
+                        class="btn btn-danger btn-sm remove-ligne"
+                        style="display: none">
+                        Supprimer
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-success btn-sm"
+                  id="addLigneBtn">
+                  <i class="fas fa-plus me-2"></i>Ajouter une ligne
+                </button>
+              </div>
+
+              <div class="col-12">
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg" type="submit">
+                    <i class="fas fa-plus me-2"></i>Créer la commande
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-success-emphasis text-center text-muted py-3 mt-auto border-top">
+      <div class="container">
+        <small>&copy; 2026 La fermerie du Père Canuel. Tous droits réservés.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fd512a673.js"
+      crossorigin="anonymous"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/api-clients.js"></script>
+    <script src="../../assets/js/api-commandes.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async () => {
+        // Charger les clients
+        try {
+          const clients = await fetchClients();
+          const clientSelect = document.getElementById("client-select");
+
+          if (clients && clients.length > 0) {
+            clients.forEach((client) => {
+              const option = document.createElement("option");
+              option.value = client.id;
+              option.textContent = `${client.name} (${client.client_type})`;
+              clientSelect.appendChild(option);
+            });
+          }
+        } catch (error) {
+          console.error("Error loading clients:", error);
+        }
+      });
+
+      // Ajouter une ligne
+      let ligneCount = 1;
+      document.getElementById("addLigneBtn").addEventListener("click", () => {
+        ligneCount++;
+        const container = document.getElementById("lignes-container");
+        const newLigne = document.createElement("div");
+        newLigne.className = "ligne-row row gy-3 mb-3";
+        newLigne.id = `ligne-${ligneCount}`;
+        newLigne.innerHTML = `
+          <div class="col-12 col-md-4">
+            <label class="form-label">Format ID <span class="text-danger">*</span></label>
+            <input type="number" class="form-control" name="format_id" placeholder="ID du format" required min="1" />
+          </div>
+          <div class="col-12 col-md-3">
+            <label class="form-label">Quantité <span class="text-danger">*</span></label>
+            <input type="number" class="form-control" name="quantite" placeholder="Quantité" required min="1" />
+          </div>
+          <div class="col-12 col-md-3">
+            <label class="form-label">Prix Unitaire <span class="text-danger">*</span></label>
+            <input type="number" class="form-control" name="prix_unitaire" placeholder="Prix" required min="0" step="0.01" />
+          </div>
+          <div class="col-12 col-md-2 d-flex align-items-end">
+            <button type="button" class="btn btn-danger btn-sm remove-ligne">Supprimer</button>
+          </div>
+        `;
+        container.appendChild(newLigne);
+
+        // Afficher le bouton supprimer sur la première ligne
+        document.querySelector("#ligne-1 .remove-ligne").style.display =
+          "block";
+      });
+
+      // Supprimer une ligne
+      document.addEventListener("click", (e) => {
+        if (e.target && e.target.classList.contains("remove-ligne")) {
+          const ligneRow = e.target.closest(".ligne-row");
+          if (ligneRow && document.querySelectorAll(".ligne-row").length > 1) {
+            ligneRow.remove();
+          }
+        }
+      });
+
+      // Soumettre le formulaire
+      const createForm = document.getElementById("createCommandeForm");
+      createForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const id_client = document.getElementById("client-select").value;
+        const status = document.getElementById("status-select").value;
+
+        if (!id_client || !status) {
+          alert("Veuillez sélectionner un client et un statut.");
+          return;
+        }
+
+        const lignes = [];
+        const ligneRows = document.querySelectorAll(".ligne-row");
+        let isValid = true;
+
+        ligneRows.forEach((row) => {
+          const format_id = row.querySelector('input[name="format_id"]').value;
+          const quantite = row.querySelector('input[name="quantite"]').value;
+          const prix_unitaire = row.querySelector(
+            'input[name="prix_unitaire"]',
+          ).value;
+
+          if (!format_id || !quantite || !prix_unitaire) {
+            isValid = false;
+            return;
+          }
+
+          lignes.push({
+            format_id: parseInt(format_id),
+            quantite: parseInt(quantite),
+            prix_unitaire: parseFloat(prix_unitaire),
+          });
+        });
+
+        if (!isValid) {
+          alert("Veuillez remplir tous les champs des lignes de commande.");
+          return;
+        }
+
+        try {
+          // Créer la commande
+          const commandeResult = await createCommande({ id_client, status });
+
+          if (!commandeResult || !commandeResult.id) {
+            alert("Erreur lors de la création de la commande.");
+            return;
+          }
+
+          // Ajouter les lignes
+          for (const ligne of lignes) {
+            await addCommandeLigne(commandeResult.id, ligne);
+          }
+
+          alert("Commande créée avec succès !");
+          window.location.href = `./commande-transforme-details.html?id=${commandeResult.id}`;
+        } catch (error) {
+          console.error("Error creating commande:", error);
+          alert("Une erreur est survenue lors de la création de la commande.");
+        }
+      });
+    </script>
+  </body>
+</html>
